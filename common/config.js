@@ -1,0 +1,1 @@
+export const baseUrl = 'https://cloud-music-sepia.vercel.app'

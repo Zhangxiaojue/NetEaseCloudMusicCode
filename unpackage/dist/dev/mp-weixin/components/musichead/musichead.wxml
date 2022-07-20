@@ -1,0 +1,1 @@
+<view class="music-head data-v-e0b6e5e0" style="{{'color:' + f}}"><view wx:if="{{a}}" class="{{['music-head-icon', 'data-v-e0b6e5e0', d && 'music-head-iconblack']}}"><text class="iconfont icon-zuojiantou data-v-e0b6e5e0" bindtap="{{b}}"></text> | <text class="iconfont icon-shouye-shouye data-v-e0b6e5e0" bindtap="{{c}}"></text></view> {{e}}</view>

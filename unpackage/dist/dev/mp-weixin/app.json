@@ -1,0 +1,20 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/list/list",
+		"pages/detail/detail",
+		"pages/search/search"
+	],
+	"window": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "网易云音乐",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"requiredBackgroundModes": [
+		"audio",
+		"location"
+	],
+	"usingComponents": {},
+	"sitemapLocation": "sitemap.json"
+}
