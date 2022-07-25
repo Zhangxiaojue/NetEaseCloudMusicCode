@@ -2,6 +2,7 @@
 var common_vendor = require("../../common/vendor.js");
 require("../../app.js");
 var common_http = require("../../common/http.js");
+require("../../store/index.js");
 require("../../common/config.js");
 const _sfc_main = {
   data() {
@@ -40,7 +41,7 @@ if (!Math) {
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
     a: common_vendor.p({
-      title: "\u7F51\u6613\u4E91\u97F3\u4E50",
+      title: "\u4E0D\u77E5\u540D\u7684\u5C0F\u97F3\u4E50",
       icon: false
     }),
     b: common_vendor.o((...args) => $options.handleToSearch && $options.handleToSearch(...args)),

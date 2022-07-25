@@ -14,7 +14,7 @@
 					<view class="list-head-text">
 						<view>{{ playlist.name }}</view>
 						<view>
-							<image v-if="playlist.creator.avatarUrl !== ' ' " :src="playlist.creator.avatarUrl" mode=""></image>{{ playlist.creator.nickname }}
+							<image v-if="playlist.creator.avatarUrl !== ' ' " src="http://p1.music.126.net/imDGOWcpQvcO8fat7U9aUQ==/109951165806223960.jpg" mode=""></image>原创君
 						</view>
 						<view>{{ playlist.description }}</view>
 					</view>
@@ -93,7 +93,8 @@
 				const res = await myRequest({url:`/playlist/detail?id=${id}`})
 				this.playlist = res.data.playlist;
 				this.privileges = res.data.privileges;
-				// this.$store.commit('INIT_TOPLISTIDS', res.data.privileges)
+				// this.$store.commit('INIT_TOPLISTIDS', res.data.playlist.trackIds)
+				// console.log(res.data.privileges)
 				// 数据加载出阿来之后隐藏
 				this.isLoading = false;
 				uni.hideLoading()

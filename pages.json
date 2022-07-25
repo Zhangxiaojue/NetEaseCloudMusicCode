@@ -17,7 +17,6 @@
 				// 是否开启下拉刷新
                 "enablePullDownRefresh": false
             }
-            
         }
         ,{
             "path": "pages/detail/detail",
@@ -37,6 +36,16 @@
                 // 是否开启下拉刷新
                 "enablePullDownRefresh": false
             }
+            
+        },
+		{
+            "path" : "pages/pinlun/pinlun",
+			"style": {
+			   // 设置自定义头部
+			   "navigationStyle": "custom",
+			   // 是否开启下拉刷新
+			   "enablePullDownRefresh": false
+			}
             
         }
     ],

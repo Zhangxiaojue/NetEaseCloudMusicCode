@@ -2,6 +2,7 @@
 var common_vendor = require("../../common/vendor.js");
 require("../../app.js");
 var common_http = require("../../common/http.js");
+require("../../store/index.js");
 require("../../common/config.js");
 const _sfc_main = {
   data() {

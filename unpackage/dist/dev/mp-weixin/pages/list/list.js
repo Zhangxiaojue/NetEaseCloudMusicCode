@@ -2,6 +2,7 @@
 var common_vendor = require("../../common/vendor.js");
 require("../../app.js");
 var common_http = require("../../common/http.js");
+require("../../store/index.js");
 require("../../common/config.js");
 const _sfc_main = {
   data() {
@@ -77,13 +78,10 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     e: common_vendor.t($data.playlist.playCount),
     f: common_vendor.t($data.playlist.name),
     g: $data.playlist.creator.avatarUrl !== " "
-  }, $data.playlist.creator.avatarUrl !== " " ? {
-    h: $data.playlist.creator.avatarUrl
-  } : {}, {
-    i: common_vendor.t($data.playlist.creator.nickname),
-    j: common_vendor.t($data.playlist.description),
-    k: common_vendor.t($data.playlist.trackCount),
-    l: common_vendor.f($data.playlist.tracks, (item, index, i0) => {
+  }, $data.playlist.creator.avatarUrl !== " " ? {} : {}, {
+    h: common_vendor.t($data.playlist.description),
+    i: common_vendor.t($data.playlist.trackCount),
+    j: common_vendor.f($data.playlist.tracks, (item, index, i0) => {
       return common_vendor.e({
         a: common_vendor.t(index + 1),
         b: common_vendor.t(item.name),
@@ -97,7 +95,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         h: common_vendor.o(($event) => $options.handleToDetail(item.id))
       });
     }),
-    m: !$data.isLoading
+    k: !$data.isLoading
   });
 }
 var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-7d5e07c6"], ["__file", "E:/WebCase/Uni-app/NetEaseCloudMusic/neteaseMusic/pages/list/list.vue"]]);

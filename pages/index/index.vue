@@ -1,6 +1,6 @@
 <template>
 	<view class="idnex">
-		<musichead title="网易云音乐" :icon="false"></musichead>
+		<musichead title="不知名的小音乐" :icon="false"></musichead>
 		<div class="container">
 			<scroll-view scroll-y="true">
 				<!-- 搜索框 -->
